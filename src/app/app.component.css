@@ -1,0 +1,19 @@
+.profile  {
+    opacity: 0.5;
+}
+.note-section {
+    color: rgb(255, 217, 0);
+}
+.booking-here {
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: large;
+}
+.andiswa {
+    left: -17px;
+    top: -5px;
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    z-index: 100;
+}

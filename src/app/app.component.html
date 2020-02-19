@@ -1,21 +1,578 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<div id="video">
+    <div class="preloader">
+        <div class="preloader-bounce">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
 
-<router-outlet></router-outlet>
+    <app-header></app-header>
+
+    <video autoplay muted loop id="myVideo">
+        <source src="../assets/images/video-hc.mp4" type="video/mp4">
+    </video>
+
+    <div id="fullpage" class="fullpage-default">
+
+        <!-- welcome -->
+        <div class="section animated-row" data-section="welcome">
+            <div class="section-inner">
+                <div class="welcome-box">
+                    <span class="welcome-first animate" data-animate="fadeInUp">Hello, welcome to</span>
+                    <h1 class="welcome-title animate" data-animate="fadeInUp">Hostess & Cook</h1>
+                    <p class="animate" data-animate="fadeInUp">We strive to deliver quality service at affordable
+                        prices. Our passion about food and hospitality sets us apart from the rest. We are innovative on
+                        every level of our business with consistent professionalism. Whether it is food, baking or
+                        hosting services we provide for our customers. Our ultimate goal is to exceed our customers'
+                        expectation.</p>
+                    <div class="scroll-down next-section animate" data-animate="fadeInUp"><img
+                            src="../assets/images/mouse-scroll.png" alt=""><span>Scroll Down</span></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- about -->
+        <div class="section animated-row" data-section="about">
+            <div class="section-inner">
+                <div class="about-section">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 wide-col-laptop">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="about-contentbox">
+                                        <div class="animate" data-animate="fadeInUp">
+                                            <span>About Me</span>
+                                            <h2>Who am i?</h2>
+                                            <p>Hello,</p>
+                                            <p> My name is Andiswa Skweza.</p>
+
+                                            <p>I am not a Chef but a Cook, I started self-teaching how to cook and bake
+                                                from an early age
+                                                of 7\8yrs old – by observing my mother and uncle in the kitchen when
+                                                they prepared food.
+                                                Growing up, cooking was not a duty\chore I was expected to do after
+                                                school or during
+                                                school holidays, so I kept trying out dishes when no one was watching
+                                                and would wait for
+                                                them to be surprised by my food when they get home.</p>
+
+                                            <p>Since then, anything involving food and hosting family and friends gives
+                                                me great joy, and
+                                                absolutely stems from my voracious appetite as a child. I have always
+                                                loved food. When I’m
+                                                not eating, I’m thinking about food, when I’m not thinking about food
+                                                I’m reading and
+                                                researching about food. </p>
+
+                                            <p>I love experimenting with different combinations of flavours and
+                                                ingredients. I am always
+                                                planning the next great meal to cook or treat to bake. As a home cook I
+                                                like to believe that
+                                                every dish I make is a personal expression, with each ingredient being
+                                                specially selected. I
+                                                strive to put emotion into my cooking, and I believe this reflects in
+                                                the taste of the dishes
+                                                that I prepare. I realize that not every combination I try will be a
+                                                success, but this is one of
+                                                the benefits of cooking, I can just wash the dishes, and try again.</p>
+
+                                            <p>I cannot think of anything that gives me greater joy and pleasure than
+                                                cooking for family
+                                                and friends. Food manages to bring people together, in a way that few
+                                                other things can.
+                                                Sitting around a table with loved ones, sharing stories and interacting
+                                                over a delicious meal
+                                                is particularly important to me – because I truthfully see and
+                                                experience food as a medium
+                                                of communication.</p>
+                                            <p>Nowadays we share people’s attention with Twitter, Facebook, Instagram,
+                                                Whatsapp and
+                                                emails. It is my ultimate goal that when I cook and prepare food that
+                                                will give you no choice
+                                                but to enjoy yourself wholeheartedly and disconnect from the world,
+                                                except of course if you
+                                                want to post a picture of the meal from Hostess and Cook for your
+                                                friends to see.</p>
+                                        </div>
+                                        <!-- <div class="facts-list owl-carousel">
+                                            <div class="item animate" data-animate="fadeInUp">
+                                                <div class="counter-box">
+                                                    <i class="fa fa-trophy counter-icon" aria-hidden="true"></i><span class="count-number">32</span> Awards Won
+                                                </div>
+                                            </div>
+                                            <div class="item animate" data-animate="fadeInUp">
+                                                <div class="counter-box">
+                                                    <i class="fa fa-graduation-cap counter-icon" aria-hidden="true"></i><span class="count-number">4</span> Degrees
+                                                </div>
+                                            </div>
+                                            <div class="item animate" data-animate="fadeInUp">
+                                                <div class="counter-box">
+                                                    <i class="fa fa-desktop counter-icon" aria-hidden="true"></i><span class="count-number">12</span> Working Years
+                                                </div>
+                                            </div>
+                                            <div class="item animate" data-animate="fadeInUp">
+                                                <div class="counter-box">
+                                                    <i class="fa fa-support counter-icon" aria-hidden="true"></i><span class="count-number">6</span> Team Members
+                                                </div>
+                                            </div>
+                                            <div class="item animate" data-animate="fadeInUp">
+                                                <div class="counter-box">
+                                                    <i class="fa fa-certificate counter-icon" aria-hidden="true"></i><span class="count-number">10</span> Certificates
+                                                </div>
+                                            </div>
+                                        </div> -->
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <figure class="about-img animate" data-animate="fadeInUp"><img
+                                            src="../assets/images/H&C/1BC404DC-ED98-45E5-ADF4-F7DE991D85A7.jpg"
+                                            class="rounded profile" alt="Andiswa" height="500" width="800"></figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- orders -->
+        <div class="section animated-row" data-section="orders" *ngIf="!isStyleAndTaste">
+            <div class="section-inner">
+                <div class="row justify-content-center">
+                    <!-- <div class="col-md-8 wide-col-laptop">
+                        <div class="title-block animate" data-animate="fadeInUp">
+                            <span>Orders</span>
+                            <h2>What I Do?</h2>
+                        </div>
+                        <div class="services-section">
+                            <div class="services-list owl-carousel">
+                                <div class="item animate" data-animate="fadeInUp">
+                                    <div class="service-box">
+                                        <span class="service-icon" (click)="goToStyle()"><i class="fa fa-cutlery" aria-hidden="true"></i></span>
+                                        <h3>Style & Taste</h3>
+                                        <p>We combine style, good taste, and personal touch to provide a broad range of services from food to hosting for you at the comfort of your home or deliver ready-made meals cooked from our kitchen. Our services are designed to make your life easy. </p>
+                                    </div>
+                                </div>
+                                <div class="item animate" data-animate="fadeInUp">
+                                    <div class="service-box">
+                                        <span class="service-icon"><i class="fa fa-cloud" aria-hidden="true"></i></span>
+                                        <h3>Orders</h3>
+                                        <p>We combine style, good taste, and personal touch to provide a broad range of services from food to hosting for you at the comfort of your home or deliver ready-made meals cooked from our kitchen. Our services are designed to make your life easy.</p>
+                                    </div>
+                                </div>
+                
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="col-md-8 wide-col-laptop">
+                        <div class="title-block animate" data-animate="fadeInUp">
+                            <span>About us</span>
+                            <h2>What Do we Do?</h2>
+                        </div>
+                        <div class="about-section">
+                            <div class="row justify-content-center">
+                                <div class="item animate" data-animate="fadeInUp">
+                                    <div class="about-contentbox">
+                                        <span (click)="goToStyle()"></span>
+                                        <p>Hostess and Cook is a home-based cooking and hosting innovative company that
+                                            aims to make cooking and hosting easy for its customers.
+                                            We tailor make the food according to our customers' taste buds and dietary
+                                            requirements. We cook food from South African traditional cuisines
+                                            (sometimes with a twist) to some of the world's famous cuisines.</p>
+
+                                        <p>Hostess and Cook values healthy lifestyle and living, thus you can trust
+                                            that our cooking has your (and family) best interest at heart. Our team
+                                            understands and always remembers that while we are better today than
+                                            yesterday that will not always be the case. Our search to deliver excellent
+                                            food and services is boundless.</p>
+
+                                        <p>Due to popular demand, our business now provides cooking classes for our
+                                            interested customers. We teach South Africans how to cook the best way we
+                                            know how. And also offer this service to our international customers seeking
+                                            to learn the South African way of cooking or looking for bonding extramural
+                                            activities while visiting our beautiful country. This service also extends
+                                            to corporate team building activities.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div *ngIf="isStyleAndTaste">
+            <app-orders></app-orders>
+        </div>
+
+        <!-- h & c -->
+        <div class="section animated-row" data-section="h-c" *ngIf="!isStyleAndTaste">
+            <div class="section-inner">
+                <div class="row justify-content-center">
+                    <div class="col-md-7 wide-col-laptop">
+                        <div class="title-block animate" data-animate="fadeInUp">
+                            <span>Hostess & Cook</span>
+                            <h2>What we're good at?</h2>
+                        </div>
+                        <div class="skills-row animate" data-animate="fadeInDown">
+                            <div class="row">
+                                <div class="col-md-8 offset-md-2">
+                                    <div class="skill-item">
+                                        <h6>Private Catering</h6>
+                                        <div class="skill-bar">
+                                            <span>90%</span>
+                                            <div class="filled-bar-2"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <h6>Cooking Classes</h6>
+                                        <div class="skill-bar">
+                                            <span>90%</span>
+                                            <div class="filled-bar-2"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item last-skill">
+                                        <h6>Leadership</h6>
+                                        <div class="skill-bar">
+                                            <span>85%</span>
+                                            <div class="filled-bar-2"></div>
+                                        </div>
+                                    </div>
+                                    <div class="booking-here">
+                                        <p><a href="#contact">Book here</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- products and services -->
+        <div class="section animated-row" data-section="products-services" *ngIf="!isStyleAndTaste">
+            <div class="section-inner">
+                <div class="row justify-content-center">
+                    <div class="col-md-8 wide-col-laptop">
+                        <div class="title-block animate" data-animate="fadeInUp">
+                            <span>Products and Services</span>
+                            <!-- <h2>Although all our foods are homecooked, some of our products are sourced from various suppliers for fresh produced and top-quality ingredients and products, all our standard platters do not consist pork products. Pork is added at an extra cost upon request.</h2> -->
+                            <h2>We provide the following products (P) and services (S).</h2>
+                           
+                                <li>Private Catering (S)</li>
+                                <li>Cooking Classes (S)</li>
+                                <li>Enamel Ware (P)</li>
+                            
+                        </div>
+                        <div class="gallery-section">
+                            <div class="gallery-list owl-carousel">
+                                <div class="item animate" data-animate="fadeInUp">
+                                    <div class="portfolio-item">
+                                        <div class="thumb">
+                                            <img src="../assets/images/Chicken Platters/Image-16.png" alt="">
+                                        </div>
+                                        <div class="thumb-inner animate" data-animate="fadeInUp">
+                                            <h4>Chicken Platter</h4>
+                                            <p> A variety of meats that is, chicken wings, drumsticks, beef and chicken
+                                                sosaties, beef sausages, meatballs or frikkadels with barbeque or sweet
+                                                and sour dipping sauces at – R550 </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item animate" data-animate="fadeInUp">
+                                    <div class="portfolio-item">
+                                        <div class="thumb">
+                                            <img src="../assets/images/Meat Platters/Image-13.png" alt="">
+                                        </div>
+                                        <div class="thumb-inner animate" data-animate="fadeInUp">
+                                            <h4>Meat Platter</h4>
+                                            <p> A variety of meats that is, chicken wings, drumsticks, beef and chicken
+                                                sosaties, beef sausages, meatballs or frikkadels with barbeque or sweet
+                                                and sour dipping sauces at – R550 </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item animate" data-animate="fadeInUp">
+                                    <div class="portfolio-item">
+                                        <div class="thumb">
+                                            <img src="../assets/images/Fruits Platters/Image-1.png" alt="">
+                                        </div>
+                                        <div class="thumb-inner animate" data-animate="fadeInUp">
+                                            <h4>Fruit Platters</h4>
+                                            <p>Delicious fruit platters for all family, friends and colleagues</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item animate" data-animate="fadeInUp">
+                                    <div class="portfolio-item">
+                                        <div class="thumb">
+                                            <img src="../assets/images/Mini burgers Platters/Image-5.png" alt="">
+                                        </div>
+                                        <div class="thumb-inner animate" data-animate="fadeInUp">
+                                            <h4>Mini Burgers Platters</h4>
+                                            <p> Our mini burger platters consist of Beef, Chicken, Cheeses and Salads. -
+                                                R650</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item animate" data-animate="fadeInUp">
+                                    <div class="portfolio-item">
+                                        <div class="thumb">
+                                            <img src="../assets/images/Sandwich Platters/Image-3.png" alt="">
+                                        </div>
+                                        <div class="thumb-inner animate" data-animate="fadeInUp">
+                                            <h4>Sandwich Platters</h4>
+                                            <p> Our sandwich platters consist of various health breads (including white
+                                                bread) with fillings such as: Cheese & Tomato; Chicken or Tuna Mayo;
+                                                Beef & Cheese and Vegetarian at – R300 </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="item animate" data-animate="fadeInUp">
+                                    <div class="portfolio-item">
+                                        <div class="thumb">
+                                            <img src="images/item-3.jpg" alt="">
+                                        </div>
+                                        <div class="thumb-inner animate" data-animate="fadeInUp">
+                                            <h4>templatemo is the best</h4>
+                                            <p>Please tell your friends about it. Templatemo is the best website to download free Bootstrap templates.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item animate" data-animate="fadeInUp">
+                                    <div class="portfolio-item">
+                                        <div class="thumb">
+                                            <img src="images/item-1.jpg" alt="">
+                                        </div>
+                                        <div class="thumb-inner animate" data-animate="fadeInUp">
+                                            <h4>templatemo is the best</h4>
+                                            <p>Please tell your friends about it. Templatemo is the best website to download free Bootstrap templates.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item animate" data-animate="fadeInUp">
+                                    <div class="portfolio-item">
+                                        <div class="thumb">
+                                            <img src="images/item-2.jpg" alt="">
+                                        </div>
+                                        <div class="thumb-inner animate" data-animate="fadeInUp">
+                                            <h4>templatemo is the best</h4>
+                                            <p>Please tell your friends about it. Templatemo is the best website to download free Bootstrap templates.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item animate" data-animate="fadeInUp">
+                                    <div class="portfolio-item">
+                                        <div class="thumb">
+                                            <img src="images/item-3.jpg" alt="">
+                                        </div>
+                                        <div class="thumb-inner animate" data-animate="fadeInUp">
+                                            <h4>templatemo is the best</h4>
+                                            <p>Please tell your friends about it. Templatemo is the best website to download free Bootstrap templates.</p>
+                                        </div>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- reviews -->
+        <div class="section animated-row" data-section="reviews" *ngIf="!isStyleAndTaste">
+            <div class="section-inner">
+                <div class="row justify-content-center">
+                    <div class="col-md-8 wide-col-laptop">
+                        <div class="title-block animate" data-animate="fadeInUp">
+                            <span>TESTIMONIALS</span>
+                            <h2>What they say about us</h2>
+                        </div>
+                        <div class="col-md-8 offset-md-2">
+                            <div class="testimonials-section">
+                                <div class="testimonials-slider owl-carousel">
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div class="testimonial-item">
+                                            <div class="client-row">
+                                                <img src="../assets/images/General/IMG_8425.PNG" class="rounded-circle"
+                                                    alt="profile 1">
+                                            </div>
+                                            <div class="testimonial-content">
+                                                <h4>Odette Hartslief</h4>
+                                                <p>"I would like to convey my sincerest appreciation and thanks to you
+                                                    and your team – the catering
+                                                    service provided today was superbly done. It was well received and
+                                                    presented."</p>
+                                                <!-- <span style="cursor: pointer;" (click)="openOdette()">See more...</span> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div class="testimonial-item">
+                                            <div class="client-row">
+                                                <img src="../assets/images/General/IMG_9582.JPG" class="rounded-circle"
+                                                    alt="profile 2">
+                                            </div>
+                                            <div class="testimonial-content">
+                                                <h4>Ramiro Rav</h4>
+                                                <p>"We were lucky that Hostess and Cook was recommended to us by friends.  Hostess and Cook came to our house and cooked traditional South African dishes. We had a great time with outstanding food (delicious chicken, chakalaka, crumbed cape hake, etc.) and we learned a lot about traditional dishes of South Africa. You can feel the passion for food at every moment. 
+
+                                                    Strong recommendation to every foodie! 
+                                                    
+                                                    @Andiswa: Thank you for this great experience. I will remember the Malva Pudding for a long time :)"</p>
+                                                <!-- <span>CEO and Founder</span> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div class="testimonial-item">
+                                            <div class="client-row">
+                                                <img src="../assets/images/General/2397FA33-44BE-48C5-9DF7-654F2A215796.JPG"
+                                                    class="rounded-circle" alt="profile 1">
+                                            </div>
+                                            <div class="testimonial-content">
+                                                <h4>Romi Da Silva</h4>
+                                                <p>"The red velvet cup cakes where amazing! The guests loved them!"</p>
+                                                <!-- <span>Managing Director</span> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div class="testimonial-item">
+                                            <div class="client-row">
+                                                <img src="../assets/images/General/IMG_9870.JPG" class="rounded-circle"
+                                                    alt="profile 1">
+                                            </div>
+                                            <div class="testimonial-content">
+                                                <h4>Mbali Mkhize</h4>
+                                                <p>"Yho damn girl, the savory scones, OMG the stew out of this world,
+                                                    the flavors are not over bearing
+                                                    on the palate, everything blends very well together. It's a yes from
+                                                    me."</p>
+                                                <!-- <span>Managing Director</span> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div class="testimonial-item">
+                                            <div class="client-row">
+                                                <img src="../assets/images/General/IMG_9582.JPG" class="rounded-circle"
+                                                    alt="profile 2">
+                                            </div>
+                                            <div class="testimonial-content">
+                                                <h4>Linda Mliswa</h4>
+                                                <p>"Afternoon Andy, I just wanted to say thank you so much for the most
+                                                    delectable red velvet cupcakes
+                                                    you baked for valentine's day. They were simply delicious my
+                                                    daughter and I loved them to bits and
+                                                    we couldn't get enough of them we are huge fans of your work now.
+                                                    Thanks again!!
+
+                                                    Happy customer."</p>
+                                                <!-- <span>CEO and Founder</span> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div class="testimonial-item">
+                                            <div class="client-row">
+                                                <img src="../assets/images/General/IMG_7371.PNG" class="rounded-circle"
+                                                    alt="profile 3">
+                                            </div>
+                                            <div class="testimonial-content">
+                                                <h4>Mnciniseli Mkhonto</h4>
+                                                <p>"I have been fortunate to have tested various meals prepared by
+                                                    Hostess and Cook from their
+                                                    delicious scrumptious muffins to their African traditional meals. My
+                                                    best experience to yet, came
+                                                    when I received an invitation to a Christmas lunch and the best part
+                                                    was seeing the owner and chef
+                                                    live in action, how she takes pride in what she does really stood
+                                                    out for me. She would explain what
+                                                    she was preparing from starters, main course to desert. Firstly the
+                                                    dishes she serves in are
+                                                    beautiful and clean and that's a very important factor if you're to
+                                                    enjoy your food, and my biggest
+                                                    moment came when the chicken wings and lamb chops were served since
+                                                    I'm a big fan of meat, I
+                                                    literally went in "hard", the g on the day was so impressed and had
+                                                    so much praise for the chef, a
+                                                    day well spent!
+
+                                                    Thank You "</p>
+                                                <!-- <span>Chief Marketing Officer</span> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- contact -->
+        <div class="section animated-row" data-section="contact" *ngIf="!isStyleAndTaste">
+            <div class="section-inner">
+                <div class="row justify-content-center">
+                    <div class="col-md-7 wide-col-laptop">
+                        <div class="title-block animate" data-animate="fadeInUp">
+                            <span>Contact Us</span>
+                            <br>
+                            <h2>We are contactable on the following mediums:</h2>
+                        </div>
+                        <div class="contact-section">
+                            <div class="row">
+                                <div class="col-md-6 animate" data-animate="fadeInUp">
+                                    <div class="contact-box">
+                                        <!-- <div class="contact-row">
+                                            <i class="fa fa-map-marker"></i> Bellville, Western Cape, South Africa
+                                        </div> -->
+                                        <div class="contact-row">
+                                            <i class="fa fa-phone"></i> +27 82 998 1744
+                                        </div>
+                                        <div class="contact-row">
+                                            <i class="fa fa-whatsapp"></i> +27 82 998 1744
+                                        </div>
+                                        <div class="contact-row">
+                                            <i class="fa fa-envelope"></i> info@hostess&cook.com
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 animate" data-animate="fadeInUp">
+                                    <form id="ajax-contact" method="post" action="#">
+                                        <div class="input-field">
+                                            <input type="text" class="form-control" name="name" id="name" required
+                                                placeholder="Name">
+                                        </div>
+                                        <div class="input-field">
+                                            <input type="email" class="form-control" name="email" id="email" required
+                                                placeholder="Email">
+                                        </div>
+                                        <div class="input-field">
+                                            <textarea class="form-control" name="message" id="message" required
+                                                placeholder="For bookings/complaints"></textarea>
+                                        </div>
+                                        <button class="btn" type="submit">Submit</button>
+                                    </form>
+                                    <div id="form-messages" class="mt-3"></div>
+                                </div>
+                                <div class="note-section">
+                                    <p><b>NB:</b><i> as a homebased company, we do not yet have premises or offices
+                                            where our customers can visit us. We visit our customers for consultations
+                                            or book a venue when needed.
+                                            Thank you for your understanding.
+                                        </i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <app-footer></app-footer>
+</div>
